@@ -21,12 +21,13 @@ Tested on Linux with Proton/DXVK.
 
 ## Installation
 
-1. Install [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader)
+1. The mod only works with a DRM-free executable. The unmodified showdown.exe and showdown_avx.exe contain protections against memory tampering, which is what this script does.
+2. Install [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader)
    (x86) into the game folder as `dinput8.dll`.
    On Linux/Proton, add the launch option `WINEDLLOVERRIDES="dinput8=n,b" %command%`.
-2. Create a `scripts` folder in the game folder.
-3. Copy `release/SplitToSingle.asi` and `release/SplitToSingle.ini` into `scripts`.
-4. Start the game and choose **Split Screen** from the menu.
+3. Create a `scripts` folder in the game folder.
+4. Copy `release/SplitToSingle.asi` and `release/SplitToSingle.ini` into `scripts`.
+5. Start the game and choose **Split Screen** from the menu.
 
 ## Configuration
 
@@ -62,3 +63,6 @@ The output is `release/SplitToSingle.asi`.
   rendering mode, split screen checks, class override, lobby button label)
 - `src/overlay.c` – small D3D11 `Present` hook that draws the on-screen message
 - `src/*.def` – import definitions used to generate the import libraries
+
+## AI disclosure
+The script was written by Claude and tested by a human being.
