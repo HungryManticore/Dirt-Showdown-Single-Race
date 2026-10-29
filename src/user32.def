@@ -1,0 +1,5 @@
+LIBRARY user32.dll
+EXPORTS
+CreateWindowExA@48
+DestroyWindow@4
+DrawTextA@20
